@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/progressBar.css">
+    <link rel="stylesheet" href="css/toggle.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="block">
+                <div class="title">
+                    Progress
+                </div>
+                <div class="progress-container" id="progressContainer">
+                    <svg class="progress-circle">
+                        <circle class="progress-bg" cx="50%" cy="50%" r="70"></circle>
+                        <circle class="progress-line" cx="50%" cy="50%" r="70"  id="progressCircle"></circle>
+                    </svg>
+                </div>
+        </div>
+        <div class="block">
+            <div class="actions-container">
+                <div class="action-row">
+                    <div class="first-column">
+                        <input type="number" class="value-input" id="valueInput" value="60" min="0" max="100">
+                    </div>
+                    <div class="second-column">
+                        <div>Value</div>
+                    </div>
+                </div>
+                <div class="action-row">
+                    <div class="first-column">
+                        <div class="toggle" id="activeToggle">
+                            <div class="toggle-dot"></div>
+                        </div>
+                    </div>
+                    <div class="second-column">
+                        <div class="control-label">Active</div>
+                    </div>
+                </div>
+                <div class="action-row">
+                    <div class="first-column">
+                        <div class="toggle" id="hideToggle">
+                            <div class="toggle-dot"></div>
+                        </div>
+                    </div>
+                    <div class="second-column">
+                        <div class="control-label">Hide</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.toggle {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    background-color: var(--color-toggle-bg);
+    border-radius: 24px;
+    padding: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-dot {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 26px;
+    width: 26px;
+    background-color: var(--color-background);
+    border-radius: 360px;
+    transition: transform 0.3s ease;
+}
+
+
+.toggle.active {
+    background-color: var(--color-primary);
+}
+
+.toggle.active .toggle-dot {
+    transform: translateX(20px);
+}

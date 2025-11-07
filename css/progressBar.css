@@ -1,0 +1,33 @@
+.progress-circle {
+    width: 100%;
+    height: 100%;
+    rotate: -90deg;
+}
+
+.progress-bg {
+    fill: none;
+    stroke: var(--color-stroke);
+    stroke-width: 12;
+}
+
+.progress-line {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 12;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-line.animated {
+    animation: spin 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        stroke-dashoffset: 440;
+    }
+    100% {
+        stroke-dashoffset: -440;
+    }
+}

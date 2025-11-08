@@ -21,7 +21,7 @@
 
 ## Демонстрация
 
-Ссылка [pages.github](https://nodejs.org/)
+Ссылка [pages.github](https://iblessme.github.io/)
 
 ## Описание API
 
@@ -52,7 +52,7 @@
 
 ![screen-capture.gif](assets/demo/normal.gif)
 
-# Состояние Hidden
+# Состояние Active
 ![screen-capture.gif](assets/demo/animated.gif)
 
 # Состояние Hidden

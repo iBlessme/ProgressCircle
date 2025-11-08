@@ -23,6 +23,10 @@
     animation: spin 3s ease-in-out infinite;
 }
 
+.progress-circle.hidden{
+    display: none;
+}
+
 @keyframes spin {
     0% {
         stroke-dashoffset: 440;

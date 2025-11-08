@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Тестовое задание</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/progressBar.css">
-    <link rel="stylesheet" href="css/toggle.css">
-    <link rel="stylesheet" href="css/input.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../components/input/input.css">
+    <link rel="stylesheet" href="../components/toggle/toggle.css">
+    <link rel="stylesheet" href="../components/progressCircle/progressCircle.css">
 </head>
 
 <body>
@@ -16,18 +17,17 @@
                 <div class="title">
                     Progress
                 </div>
-                <div class="progress-container" id="progressContainer">
-                    <svg class="progress-circle">
-                        <circle class="progress-bg" cx="50%" cy="50%" r="70"></circle>
-                        <circle class="progress-line" cx="50%" cy="50%" r="70"  id="progressCircle"></circle>
-                    </svg>
+                <div class="progress-container">
+                    <div  id="progressContainer"></div>
                 </div>
         </div>
         <div class="block">
             <div class="actions-container">
                 <div class="action-row">
                     <div class="first-column">
-                        <input type="number" class="value-input" id="valueInput" value="60" min="0" max="100">
+                       <label>
+                           <input type="number" class="value-input" id="valueInput" min="0" max="100">
+                       </label>
                     </div>
                     <div class="second-column">
                         <div>Value</div>
@@ -56,6 +56,7 @@
             </div>
         </div>
     </div>
-    <script src="scripts/main.js"></script>
+    <script src="../components/progressCircle/progressCircle.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

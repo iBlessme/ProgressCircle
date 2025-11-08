@@ -23,6 +23,12 @@
     animation: spin 3s ease-in-out infinite;
 }
 
+@supports (font: -apple-system-body) and (-webkit-appearance: none) {
+    .progress-line.animated {
+        animation: iosSpin 3s ease-in-out infinite;
+    }
+}
+
 .progress-circle.hidden{
     display: none;
 }
@@ -33,5 +39,17 @@
     }
     100% {
         stroke-dashoffset: -440;
+    }
+}
+
+@keyframes iosSpin {
+    0% {
+        stroke-dashoffset: 440;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: 440;
     }
 }

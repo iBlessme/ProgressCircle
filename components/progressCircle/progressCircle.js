@@ -1,6 +1,9 @@
 class ProgressCircle {
     constructor(containerId) {
         this.container = document.getElementById(containerId);
+        if(!this.container) {
+            throw new Error(`Невозможно создать progressCircle, div с id="${containerId}" - отсутствует`);
+        }
         this.createHtmlComponent();
 
         this.progressLine = this.container.querySelector('.progress-line');

@@ -52,7 +52,7 @@
 ![screen-capture.gif](assets/demo/normal.gif)
 
 # Состояние Active
-![screen-capture.gif](assets/demo/animated.gif)
+![screen-capture.gif](assets/demo/active.gif)
 
 # Состояние Hidden
 ![screen-capture.gif](assets/demo/hidden.gif)
